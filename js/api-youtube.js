@@ -20,7 +20,7 @@ $(function() {
 
     $('.navbar-fixed-top').find('[href="#youtube"]').closest('li').remove();
     $('#youtube').remove();
-
+    
   }
 
 });

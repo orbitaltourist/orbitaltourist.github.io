@@ -13,9 +13,13 @@
 
 var tracksList = {
 
-  bandcamp: [],
+  bandcamp: [
+    
+  ],
 
-  discogs: [],
+  discogs: [
+        
+  ],
 
   soundcloud: [
     {
@@ -35,8 +39,12 @@ var tracksList = {
     }
   ],
 
-  vimeo: [],
+  vimeo: [
+    
+  ],
 
-  youtube: []
+  youtube: [
+    
+  ]
 
 };

@@ -1,11 +1,7 @@
 $(function() {
-
-  var url = 'https://api.soundcloud.com/tracks';
-  $.getJSON(url, {
-    "client_id": '3d075533a7d38346207c15a7a6bbb170',
-    "limit": 10,
-    "user_id": '123456789'
-  }, function(tracks) {
+  
+  var url = 'http://api.soundcloud.com/users/orbital-tourist/tracks?client_id=3d075533a7d38346207c15a7a6bbb170';
+  $.getJSON(url, function(tracks) {
 
     var songlist = $('#soundcloud .songlist');
     songlist.find('*').remove();
@@ -15,7 +11,7 @@ $(function() {
       $(tracks).each(function(i, track) {
 
         var options;
-
+        
         options = {
           title: track.title,
           url: track.permalink_url,
@@ -51,7 +47,7 @@ $(function() {
 
         $('.navbar-fixed-top').find('[href="#soundcloud"]').closest('li').remove();
         $('#soundcloud').remove();
-
+    
       }
 
     }

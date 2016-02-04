@@ -20,7 +20,7 @@ $(function() {
 
     $('.navbar-fixed-top').find('[href="#vimeo"]').closest('li').remove();
     $('#vimeo').remove();
-
+    
   }
 
 });

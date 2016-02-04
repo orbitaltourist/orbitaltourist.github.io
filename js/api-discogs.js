@@ -20,7 +20,7 @@ $(function() {
 
     $('.navbar-fixed-top').find('[href="#discogs"]').closest('li').remove();
     $('#discogs').remove();
-
+    
   }
 
 });

@@ -4,7 +4,7 @@ $(function() {
   songlist.find('*').remove();
 
   if (tracksList.bandcamp.length) {
-
+    
     $(tracksList.bandcamp).each(function(i, track) {
 
       songlist.append(createTrackContainer({
@@ -20,7 +20,7 @@ $(function() {
 
     $('.navbar-fixed-top').find('[href="#bandcamp"]').closest('li').remove();
     $('#bandcamp').remove();
-
+    
   }
 
 });
