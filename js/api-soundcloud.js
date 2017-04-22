@@ -1,8 +1,8 @@
 $(function() {
   
-  var url = 'http://api.soundcloud.com/tracks/13158665?client_id=3d075533a7d38346207c15a7a6bbb170';
+  var url = 'http://api.soundcloud.com/users/181202748/tracks?client_id=3d075533a7d38346207c15a7a6bbb170';
   $.getJSON(url, function(tracks) {
-
+    
     var songlist = $('#soundcloud .songlist');
     songlist.find('*').remove();
 
@@ -28,29 +28,8 @@ $(function() {
 
       });
 
-    } else {
-
-      if (tracksList.soundcloud.length) {
-
-        $(tracksList.soundcloud).each(function(i, track) {
-
-          songlist.append(createTrackContainer({
-            title: track.title,
-            url: track.url,
-            img: track.img,
-            description: track.description
-          }));
-
-        });
-
-      } else {
-
-        $('.navbar-fixed-top').find('[href="#soundcloud"]').closest('li').remove();
-        $('#soundcloud').remove();
-    
-      }
-
     }
 
   });
+
 });
